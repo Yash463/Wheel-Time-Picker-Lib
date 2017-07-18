@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WheelTimePicker</string>
+    <string name="title_activity_act_wheel_timer_dynamic_sample">ActWheelTimerDynamicSample</string>
+</resources>

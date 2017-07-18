@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_act_wheel_timer_xmlsample"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActWheelTimerXMLSample">
+
+    <com.customeview.wheeltimepicker.WheelTimePickerView
+        android:id="@+id/wheelTimerView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        custom:numeralTextSize="18dp"
+        custom:timerTextSize="10dp"
+        custom:backGroundColor="@android:color/holo_purple">
+    </com.customeview.wheeltimepicker.WheelTimePickerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTimerValue"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:text="Time Value"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnDynamicCodeSample"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/txtTimerValue"
+            android:text="Start Dynamic Code Sample Activity"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
